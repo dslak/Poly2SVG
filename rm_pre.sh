@@ -1,0 +1,1 @@
+for file in Landkreis*.poly ; do mv "$file" "${file//Landkreis\ /}" ; done
