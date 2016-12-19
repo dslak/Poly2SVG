@@ -1,6 +1,6 @@
 #!/bin/bash
 
-minlevel=4
+minlevel=6
 maxlevel=8
 
 if [ ! -e "apikey" ]
