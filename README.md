@@ -1,7 +1,7 @@
 # Poly2SVG
 Convert poly to SVG
 
-Usage:
+**Usage:**
 * Put *.poly files into POLY directory
     * To obtain POLY files:
     ```
