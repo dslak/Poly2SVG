@@ -12,7 +12,7 @@ Convert poly to SVG
     ```
     php generate.php > output.svg
     ```
-* Enjoy :)
+
 
 POLY files can be exported from [osm.wno-edv-service.de](https://osm.wno-edv-service.de/boundaries/)
 
