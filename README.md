@@ -3,7 +3,8 @@ Convert poly to SVG
 
 Usage:
 * Put *.poly files into POLY directory
-* Launch index.php script 
+* Launch generate.php script 
+** To execute from terminal: php generate.php > output.svg
 * Enjoy :)
 
 POLY files can be exported from:
