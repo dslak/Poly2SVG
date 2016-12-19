@@ -1,7 +1,7 @@
 # Poly2SVG
 Convert poly to SVG
 
-Usage:
+**Usage:**
 * Put *.poly files into POLY directory
     * To obtain POLY files:
     ```
@@ -12,7 +12,8 @@ Usage:
     ```
     php generate.php > output.svg
     ```
-* Enjoy :)
+
+    
 
 POLY files can be exported from [osm.wno-edv-service.de](https://osm.wno-edv-service.de/boundaries/)
 
