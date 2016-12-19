@@ -15,9 +15,7 @@ if(substr($fr,-4)=="poly"){
     $of=fopen("$POLY_DIR/$fr","r");
     
     $path_name = array_slice(explode(" ",fgets($of)),2);
-    $path_name = str_replace(".poly","",$fr);
-    
-
+    $path_name = str_replace(" ","_",str_replace(".poly","",$fr));
 
     while($line = fgets($of)){
         
@@ -50,8 +48,8 @@ if(substr($fr,-4)=="poly"){
     
     
     fclose($of);
-    $paths[]="<path id=\"".trim(implode("_",$path_name))."\" ".
-                "data-code=\"".trim(implode("_",$path_name))."\" ".
+    $paths[]="<path id=\"".trim($path_name)."\" ".
+                "data-code=\"".trim($path_name)."\" ".
                 "style=\"fill:#". str_pad(dechex(mt_rand(0, 0xFFFFFF)), 6, '0', STR_PAD_LEFT)."\"\n".
                 "d=\"M ".implode(" ",$coords)." z\" ".
                 "transform=\"scale(1,-$coeff)\"/>\n";
