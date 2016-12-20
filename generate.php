@@ -23,25 +23,18 @@ if(substr($fr,-4)=="poly"){
         
         if($exp[0]!="END"){
         
-        switch(count($exp)){
-        
-            case 1:
-                $coords[] = " z M \n";
-            break;
+            if(count($exp)==2){
             
-            case 2:
                 $xy=array(floatval($exp[0])*$multi,floatval($exp[1])*$multi);
                 $coords[] = implode(",",$xy);
                 $minmax[0]=min($minmax[0],$xy[0]);
                 $minmax[1]=min($minmax[1],$xy[1]);
                 $minmax[2]=max($minmax[2],$xy[0]);
                 $minmax[3]=max($minmax[3],$xy[1]);
-            break;
-            
-            default:
-                 $coords[] = " z M \n";
-            
-        }
+                
+            }else{
+                $coords[] = " z M \n";
+            }
         }
         
     }
@@ -50,7 +43,7 @@ if(substr($fr,-4)=="poly"){
     fclose($of);
     $paths[]="<path id=\"".trim($path_name)."\" ".
                 "data-code=\"".trim($path_name)."\" ".
-                "style=\"fill:#". str_pad(dechex(mt_rand(0, 0xFFFFFF)), 6, '0', STR_PAD_LEFT)."\"\n".
+                "style=\"fill:#". str_pad(dechex(mt_rand(0, 0xCCCCCC)), 6, '0', STR_PAD_LEFT)."\"\n".
                 "d=\"M ".implode(" ",$coords)." z\" ".
                 "transform=\"scale(1,-$coeff)\"/>\n";
 }
