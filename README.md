@@ -1,19 +1,5 @@
-# Poly2SVG
-Convert poly to SVG
+# Moved to GitLab
+Following Microsoft's acquisition of GitHub and its petty corporate policy, which exploits open-source for its exclusive benefit and not for the benefit of the community, all Dslak repositories have been transferred to GitLab.
 
-**Usage:**
-* Put *.poly files into POLY directory
-    * To obtain POLY files:
-    ```
-    ./get_poly.sh zipname country_code [level_from level_to]
-    ```
-* Launch generate.php script 
-    * To execute from terminal: 
-    ```
-    php generate.php > output.svg
-    ```
+https://github.com/dslak
 
-
-POLY files can be exported from [osm.wno-edv-service.de](https://osm.wno-edv-service.de/boundaries/)
-
-Full documentation [here](https://osm.wno-edv-service.de/index.php/projekte/internationale-administrative-grenzen/boundaries-map-4-1-english-version)
